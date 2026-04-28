@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+		<link rel="stylesheet" href="style.css" />
+		<title>ToDo-list</title>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1 class="app-title">ToDo-app</h1>
+			Välkommen till Staffans ToDo-listeapp!
+		</header>
+		<main>
+			<!-- Här bor själva appen -->
+			<div id="todo-app">
+				<div>
+					<div>
+						<h2 class="list-title">Uppgifter att göra</h2>
+						<form class="formStyle">
+							<input id="todo-input" type="text" placeholder="Lägg till en uppgift" />
+							<button class="buttonStyle" id="additem" type="submit">Lägg till</button>
+						</form>
+					</div>
+					<ul id="todo-list">
+						<!-- Här kommer Javascript att lägga till uppgifterna -->
+					</ul>
+				</div>
+				<div>
+					<h2 class="list-title">Avklarade uppgifter</h2>
+					<ul id="done-list">
+						<!-- Här kommer Javascript att lägga till uppgifterna -->
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer>© 2026 Staffan Johansson</footer>
+	</body>
+</html>
