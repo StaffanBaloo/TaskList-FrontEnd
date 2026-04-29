@@ -107,9 +107,10 @@ window.addEventListener("load", () => {
         checkSpan.textContent = "check";
         checkButton.appendChild(checkSpan);
         checkButton.classList.add("custom-check");
-        checkButton.addEventListener("click", function () {
-            markTaskDone(id);
-        });
+        checkButton.type = "button";
+        checkButton.name = "check-button";
+        checkButton.onclick = `markTaskDone(${id}})`;
+
 
         const deleteButton = document.createElement("button");
         const deleteSpan = document.createElement("span");
@@ -117,9 +118,9 @@ window.addEventListener("load", () => {
         deleteSpan.textContent = "close";
         deleteButton.appendChild(deleteSpan);
         deleteButton.classList.add("custom-delete");
-        deleteButton.addEventListener("click", function () {
-            deleteTask(id);
-        });
+        deleteButton.type = "button";
+        deleteButton.name = "delete-button";
+        deleteButton.onclick = `deleteTask(${id})`
         
         const buttons = document.createElement("div");
         buttons.appendChild(checkButton);
